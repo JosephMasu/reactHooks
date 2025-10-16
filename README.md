@@ -14,33 +14,56 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+# React Hooks Tutorial
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A collection of simple and practical examples to learn how to use some of React's most important hooks.
 
-### `npm run build`
+## What does it do?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Shows **useState**, **useEffect**, **useRef**, **useContext**, **useCallback**, **useReducer**, and **useMemo** in action.  
+- Provides short examples for each hook.  
+- Helps beginners and intermediate developers understand **when and why to use each hook**.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Hooks Overview
 
-### `npm run eject`
+### 1. useState
+- Handles simple state in a component.  
+- Example: counters, toggles, and simple form inputs.  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 2. useEffect
+- Performs side effects in components, like fetching data or subscribing to events.  
+- Example: logging state changes or fetching API data on mount.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. useRef
+- Stores a mutable reference that persists across renders.  
+- Example: focusing input elements or keeping track of previous values.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 4. useContext
+- Shares state or data between components without prop drilling.  
+- Example: user authentication data accessible by multiple components.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 5. useCallback
+- Memoizes callback functions to prevent unnecessary re-renders.  
+- Example: passing functions to child components that depend on stable references.
 
-## Learn More
+### 6. useReducer
+- Handles complex state logic using a reducer function and dispatched actions.  
+- Example: multi-step forms, counters with multiple actions, or state machines.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 7. useMemo
+- Memoizes expensive calculations to improve performance.  
+- Example: searching or filtering large arrays without recalculating on every render.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## Usage
+
+Import the hook examples and use them in your React app:
+
+```tsx
+import Counter from "./useStateDemo";
+import UseEffectDemo from "./useEffectDemo";
+import UseRefDemo from "./useRefDemo";
+// ... and others
