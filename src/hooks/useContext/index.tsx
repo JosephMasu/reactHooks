@@ -1,7 +1,8 @@
-import { useState } from 'react';
+/* eslint-disable no-empty-pattern */
+import { useState } from "react";
 
-import { DashboardContext } from './context';
-import Dashboard from './Dashboard';
+import { DashboardContext } from "./context";
+import Dashboard from "./Dashboard";
 
 export interface User {
   isSubscribed: string;
@@ -12,12 +13,14 @@ interface DemoProps {}
 
 export default function UseContextDemo({}: DemoProps) {
   const [user] = useState<User>({
-    isSubscribed:  'yes',
-    name: 'Masu',
+    isSubscribed: "yes",
+    name: "Masu",
   });
 
   return (
-    <div>
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-8">
+      <h1 className="text-3xl font-bold text-indigo-600 mb-8">🌟 useContext Demo</h1>
+
       <DashboardContext.Provider value={user}>
         <Dashboard />
       </DashboardContext.Provider>
